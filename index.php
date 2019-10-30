@@ -1,33 +1,3 @@
-<?php
-// To adjust the format of the date, see www.php.net/manual/function.date.php
-//
-// If your local time is *behind* the server time, then change the "+" to
-// a "-" in the $melbdate line
-// If you don't know how many hours, then "uncomment" the three lines
-// below by deleting "// " to see what the server time is (remember to
-// put the comments "// " back when you've finished checking:
-// $serverdate = date("l, d F Y h:i a");
-// print ("$serverdate");
-// print (" &nbsp; <p>");
-
-// Variable for hours
-$hourdiff = "+2"; // hours difference between server time and local time
-
-// Nothing needs to be changed below here unless you want to change
-// the format of the date (see above for URL of options) or your local
-// time is behind the server time
-$timeadjust = ($hourdiff * 3600);
-// OLD CODE
-// $melbdate = date("l, d F Y - h:ia",time() + $timeadjust);
-
-// Corrected by Giga.
-$melbdate = date("l, d F Y - g:ia",time() + $timeadjust);
-
-
-//IP ADDRESS GET
-$ip=$_SERVER['REMOTE_ADDR'];
-
-?>
 <!doctype html>
 <html class="no-js" lang="">
 
