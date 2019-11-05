@@ -52,6 +52,10 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+* {
+  color: #333;
+}
+
 html {
   line-height: 1.90em;
 	font-size: 1.2em;
@@ -60,7 +64,7 @@ html {
 
 main {
   display: flex;
-  max-width: 768px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -71,6 +75,18 @@ section {
 section.right{
   text-align: right;
   order: 2;
+}
+
+footer {
+  font-size: small;
+  display: flex;
+  order: 3;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: -0.75px;
 }
 
 h2 {
@@ -284,9 +300,12 @@ h2 {
 
 
 </section>
-<footer>
+  <main>
+    <footer>
+      Updated Oct 30, 2019. <a href="mailto:me@cameronwalker.nz">email</a> me if any links need to be updated, added or removed.
+    </footer>
+  </main>
 
-</footer>
 </main>
 
 
