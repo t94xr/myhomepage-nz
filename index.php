@@ -11,7 +11,7 @@
 // print (" &nbsp; <p>");
 
 // Variable for hours
-$hourdiff = "+2"; // hours difference between server time and local time
+$hourdiff = "0"; // hours difference between server time and local time
 
 // Nothing needs to be changed below here unless you want to change
 // the format of the date (see above for URL of options) or your local
@@ -20,7 +20,7 @@ $timeadjust = ($hourdiff * 3600);
 // OLD CODE
 // $melbdate = date("l, d F Y - h:ia",time() + $timeadjust);
 
-// Corrected by Tim Boundy.
+// Corrected by Tim Boundy. gigaplex@gmail.com
 $melbdate = date("l, d F Y - g:ia",time() + $timeadjust);
 
 
@@ -30,7 +30,6 @@ $ip=$_SERVER['REMOTE_ADDR'];
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -40,76 +39,21 @@ $ip=$_SERVER['REMOTE_ADDR'];
 
   <link rel="manifest" href="site.webmanifest">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
-<style>
-<!--
 
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal;  font-feature-settings: 'ss02' 1 ) {
-  html { font-family: 'Inter var', sans-serif; }
-}
-
-* {
-  color: #333;
-}
-
-html {
-  line-height: 1.90em;
-	font-size: 1.2em;
-  letter-spacing: -0.5px;
-}
-
-main {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-section {
-  flex: 1;
-}
-
-section.right{
-  text-align: right;
-  order: 2;
-}
-
-footer {
-  font-size: small;
-  display: flex;
-  order: 3;
-  flex-direction: column;
-}
-
-h1 {
-  text-align: center;
-  letter-spacing: -0.75px;
-}
-
-h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-
-@media(max-width: 700px){
-  main{
-    flex-direction: column;
-  }
-  section.right{
-    text-align: left;
-  }
-}
-
-
--->
-</style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+<nav>
+  <a href="http://www.google.co.nz/">Google NZ</a>
+  <a href="http://www.google.co.nz/">Google NZ</a>
+  <a href="http://www.google.co.nz/">Google NZ</a>
+  <a href="http://www.google.co.nz/">Google NZ</a>
+  <a href="http://www.google.co.nz/">Google NZ</a>
+
+</nav>
 
     <header>
       <h1 class="title"><?php print ("$melbdate"); ?></h1>
@@ -117,7 +61,7 @@ h2 {
 
 <main>
 
-<section>
+<section class="nz">
 <h2>Search Engines</h2>
 <p>
   <a href="http://www.google.co.nz/">Google NZ</a>
@@ -204,7 +148,7 @@ h2 {
 
 </section>
 
-<section class="right">
+<section class="world">
 
 <h2>Social Networking</h2>
 <p>
@@ -298,16 +242,12 @@ h2 {
   <a href="http://howsecureismypassword.net/">How Secure is My Password?</a>
 </p>
 
-
 </section>
-  <main>
-    <footer>
-      Updated Oct 30, 2019. <a href="mailto:me@cameronwalker.nz">email</a> me if any links need to be updated, added or removed.
-    </footer>
-  </main>
-
 </main>
 
+<footer>
+  Updated Oct 30, 2019. <a href="mailto:me@cameronwalker.nz">email</a> me if any links need to be updated, added or removed.
+</footer>
 
 </div>
 </body>
