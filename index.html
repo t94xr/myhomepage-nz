@@ -1,33 +1,3 @@
-<?php
-// To adjust the format of the date, see www.php.net/manual/function.date.php
-//
-// If your local time is *behind* the server time, then change the "+" to
-// a "-" in the $melbdate line
-// If you don't know how many hours, then "uncomment" the three lines
-// below by deleting "// " to see what the server time is (remember to
-// put the comments "// " back when you've finished checking:
-// $serverdate = date("l, d F Y h:i a");
-// print ("$serverdate");
-// print (" &nbsp; <p>");
-
-// Variable for hours
-$hourdiff = "0"; // hours difference between server time and local time
-
-// Nothing needs to be changed below here unless you want to change
-// the format of the date (see above for URL of options) or your local
-// time is behind the server time
-$timeadjust = ($hourdiff * 3600);
-// OLD CODE
-// $melbdate = date("l, d F Y - h:ia",time() + $timeadjust);
-
-// Corrected by Tim Boundy. gigaplex@gmail.com
-$melbdate = date("l, d F Y - g:ia",time() + $timeadjust);
-
-
-//IP ADDRESS GET
-$ip=$_SERVER['REMOTE_ADDR'];
-
-?>
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -38,15 +8,12 @@ $ip=$_SERVER['REMOTE_ADDR'];
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
-
-
-
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 <nav>
+
   <a href="http://www.google.co.nz/">Google NZ</a>
   <a href="http://www.google.co.nz/">Google NZ</a>
   <a href="http://www.google.co.nz/">Google NZ</a>
@@ -54,10 +21,6 @@ $ip=$_SERVER['REMOTE_ADDR'];
   <a href="http://www.google.co.nz/">Google NZ</a>
 
 </nav>
-
-    <header>
-      <h1 class="title"><?php print ("$melbdate"); ?></h1>
-    </header>
 
 <main>
 
@@ -72,7 +35,7 @@ $ip=$_SERVER['REMOTE_ADDR'];
 <h2>New Zealand</h2>
 <p>
     <a href="http://www.nzpages.co.nz/">NZPages</a>
-  <a href="http://nzsearch.co.nz/">NZSearch</a>
+    <a href="http://nzsearch.co.nz/">NZSearch</a>
     <a href="http://www.nzdating.com/">NZDating</a>
     <a href="http://www.freetvguide.co.nz/">Free TV Guide</a>
     <a href="http://www.vouchermate.co.nz/">Vouchermate</a>
