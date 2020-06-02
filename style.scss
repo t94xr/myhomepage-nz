@@ -130,18 +130,5 @@ time {
   opacity: 0.6;
 }
 
-/* Add " (PDF)" text after links that go to PDFs */
-a[href$=".pdf"]:after { content: " (PDF)" url("pdficon.png"); }
-
-/* If file size specified as data attribute, use that too */
-a[href$=".pdf"][data-size]:after { content: " (PDF, " attr(data-size) ")" url("pdficon.png"); }
-
-address {
-	border-left: 8px solid $accent-color;
-	padding:0.5em 12.5px 0.5em 25px;
-	width:85%;
-	margin: 20px
-}
-
 @import 'scss/extras';
 @import 'scss/low-res';
