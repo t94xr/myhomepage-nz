@@ -1,66 +1,86 @@
+@charset "UTF-8";
 /* asdasdasd */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --ff-sans: "Poppins",Arial,Helvetica,sans-serif;
   --ff-serif: "Bebas Neue",Georgia,Times New Roman,Times,serif;
   --ff-mono: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
-  --html-color: rgba(0,0,0,.54);
-  --body-bg-color: #f7f7f7;
-  --selection-color: #fff;
-  --selection-bg-color: #ff9800;
-  --primary-color: #FFBB00;
-  --weight-thin: 100;
-  --weight-extra-light: 200;
-  --weight-light: 300;
-  --weight-regular: 400;
-  --weight-medium: 500;
-  --weight-semi-bold: 600;
-  --weight-bold: 700;
-  --weight-extra-bold: 800;
-  --weight-black: 900; }
 
+
+--html-color: rgba(0,0,0,.54);
+--body-bg-color: #f7f7f7;
+
+--selection-color: #fff;
+--selection-bg-color: #ff9800;
+
+--primary-color: #FFBB00;
+
+--weight-thin: 100;
+--weight-extra-light: 200;
+--weight-light: 300;
+--weight-regular: 400;
+--weight-medium: 500;
+--weight-semi-bold: 600;
+--weight-bold: 700;
+--weight-extra-bold: 800;
+--weight-black: 900;
+
+}
 /* Main CSS Code */
 html {
   font-family: var(--ff-sans);
-  line-height: 1.90em;
+	line-height: 1.90em;
   color: var(--html-color);
   letter-spacing: -0.75px;
-  text-rendering: optimizeLegibility; }
 
+  text-rendering: optimizeLegibility;
+}
+body {}
 main {
-  max-width: 1280px;
-  margin: auto;
+	max-width: 1280px;
+	margin: auto;
   background-color: #fff;
   padding-left: 40px;
-  padding-right: 40px; }
+  padding-right: 40px;
+}
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 16pt; }
-
+    font-size: 16pt;
+  }
   main {
-    margin-top: 75px; } }
+    margin-top: 75px;
+  }
+}
 @media screen and (max-width: 768px) {
   html {
-    font-size: 12pt; } }
-@media only screen and (hover: none) and (pointer: coarse) {
+    font-size: 12pt;
+  }
+}
+@media only screen and (hover: none) and (pointer: coarse){
   html {
-    font-size: 12pt; }
-
+    font-size: 12pt;
+  }
   main {
-    padding: none; } }
-header {
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 25px; }
+    padding: none;
+  }
+}
 
+
+header {
+	text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+}
 header h1 {
-  font-weight: var(--weight-light);
-  font-size: 2.25em;
+	font-weight: var(--weight-light);
+	font-size: 2.25em;
   letter-spacing: -3px;
   padding: 30px 0 0 0;
-  border: none; }
-
+  border: none;
+}
 a {
   text-decoration: none;
   color: #444444;
@@ -68,55 +88,61 @@ a {
   display: inline-block;
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 0;
-  line-height: 1em; }
-
+  line-height: 1em;
+}
 a:hover {
   border-bottom: 6px solid var(--primary-color);
-  font-weight: var(--weight-semi-bold); }
+  font-weight: var(--weight-semi-bold);
+
+
+}
 
 h1 {
   font-size: 2.75rem;
   font-weight: var(--weight-bold);
   letter-spacing: -5px;
   padding: 20px 0px 10px 20px;
-  margin: 10px 0 20px 0; }
-
+  margin: 10px 0 20px 0;
+}
 h2 {
   font-size: 1.5rem;
   font-weight: var(--weight-bold);
   letter-spacing: -2.5px;
   padding: 0;
-  margin: 15px 0 15px 0; }
-
+  margin: 15px 0 15px 0;
+}
 .uppercase {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 main {
   max-width: 1280px;
-  display: flex; }
+  display: flex;
+}
 
 section.nz {
   display: flex;
   flex: 1;
   flex-direction: column;
   text-align: left;
-  vertical-align: middle; }
-
+  vertical-align: middle;
+}
 section.world {
   display: flex;
   flex: 1;
   flex-direction: column;
-  text-align: right; }
+  text-align: right;
+}
 
 footer {
   max-width: 1280px;
   margin: auto;
   flex: none;
-  border-top: 1px gray solid;
-  padding: 5px;
-  font-size: small; }
+	border-top: 1px gray solid;
+	padding: 5px;
+	font-size: small;
+}
 
 time {
-  opacity: 0.6; }
-
-/*# sourceMappingURL=style.css.map */
+  opacity: 0.6;
+}
