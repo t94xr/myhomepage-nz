@@ -8,18 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+  <link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="style.css" />
+<script>
+  if (window.matchMedia('prefers-color-scheme').media) {
+    console.log('yay we support it')
+  }
+</script>
 </head>
 
 <body>
-<nav>
-
-
-
-</nav>
 
 <main>
+
 
 <section class="nz">
 <h2>Search Engines</h2>
@@ -36,7 +39,7 @@
 
 <h2>Investing &amp; Trading</h2>
 <p>
-  <a href="//sharesies.nz/r/N8WHQ">Sharesies NZ</a>
+  <a href="//sharesies.nz/r/N8WHQ">Sharesies</a>
   <a href="//app.hatchinvest.nz/">Hatch</a>
   <a href="//secure.investnow.co.nz/#/login">InvestNow</a>
   <a href="//trading.hellostake.com/sign-in">HelloStake</a>
@@ -133,7 +136,7 @@
     <a href="//www.tumblr.com/">tumblr</a>
     <a href="//reddit.com/">Reddit</a>
     <br />
-    <a href="//discord.com/">Discord</a>
+    <a href="//discord.com/login/">Discord</a>
     <a href="//www.tiktok.com/login/">TikTok</a>
     <a href="//app.houseparty.com/login">HouseParty</a>
     <a href="//web.skype.com/">Skype</a>

@@ -3,31 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-  --ff-sans: "Poppins",Arial,Helvetica,sans-serif;
-  --ff-serif: "Bebas Neue",Georgia,Times New Roman,Times,serif;
-  --ff-mono: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
-
-
---html-color: rgba(0,0,0,.54);
---body-bg-color: #f7f7f7;
-
---selection-color: #fff;
---selection-bg-color: #ff9800;
-
---primary-color: #FFBB00;
-
---weight-thin: 100;
---weight-extra-light: 200;
---weight-light: 300;
---weight-regular: 400;
---weight-medium: 500;
---weight-semi-bold: 600;
---weight-bold: 700;
---weight-extra-bold: 800;
---weight-black: 900;
-
-}
 /* Main CSS Code */
 html {
   font-family: var(--ff-sans);
@@ -37,11 +12,12 @@ html {
 
   text-rendering: optimizeLegibility;
 }
-body {}
+body {
+  background-color: var(--body-bg-color);
+}
 main {
 	max-width: 1280px;
 	margin: auto;
-  background-color: #fff;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -67,7 +43,9 @@ main {
     padding: none;
   }
 }
-
+p.notice {
+  display: var(--dark-display)
+}
 
 header {
 	text-align: center;
@@ -83,7 +61,7 @@ header h1 {
 }
 a {
   text-decoration: none;
-  color: #444444;
+  color: var(--link-color);
   font-weight: var(--weight-light);
   display: inline-block;
   border-bottom: 2px solid var(--primary-color);
@@ -93,21 +71,12 @@ a {
 a:hover {
   border-bottom: 6px solid var(--primary-color);
   font-weight: var(--weight-semi-bold);
-
-
 }
 
-h1 {
-  font-size: 2.75rem;
-  font-weight: var(--weight-bold);
-  letter-spacing: -5px;
-  padding: 20px 0px 10px 20px;
-  margin: 10px 0 20px 0;
-}
 h2 {
   font-size: 1.5rem;
-  font-weight: var(--weight-bold);
-  letter-spacing: -2.5px;
+  font-weight: var(--h2-weight);
+  letter-spacing: var(--h2-spacing);
   padding: 0;
   margin: 15px 0 15px 0;
 }

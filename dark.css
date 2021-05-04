@@ -1,0 +1,32 @@
+:root {
+  --ff-sans: "Poppins",Arial,Helvetica,sans-serif;
+  --ff-serif: "Bebas Neue",Georgia,Times New Roman,Times,serif;
+  --ff-mono: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+
+
+--html-color: white;
+--body-bg-color: #161b22;
+
+--link-color: #e6e6e6;
+
+--h2-weight: 300;
+--h2-spacing: -1px;
+
+--dark-display: ;
+
+--selection-color: #fff;
+--selection-bg-color: #ff9800;
+
+--primary-color: #FFBB00;
+
+--weight-thin: 100;
+--weight-extra-light: 200;
+--weight-light: 300;
+--weight-regular: 400;
+--weight-medium: 500;
+--weight-semi-bold: 600;
+--weight-bold: 700;
+--weight-extra-bold: 800;
+--weight-black: 900;
+
+}
