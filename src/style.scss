@@ -70,7 +70,7 @@ a {
 }
 a:hover {
   border-bottom: 6px solid var(--primary-color);
-  font-weight: var(--weight-semi-bold);
+  font-weight: var(--weight-medium);
 }
 
 h2 {
@@ -108,8 +108,13 @@ footer {
   margin: auto;
   flex: none;
 	border-top: 1px gray solid;
-	padding: 5px;
-	font-size: small;
+	padding: 10px 0px 75px 50px;
+  line-height: 1.7em;
+  letter-spacing: -0.5px;
+
+  font-weight: var(--weight-light);
+  font-size: 12pt;
+  opacity: 0.7;
 }
 
 time {
